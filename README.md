@@ -1,6 +1,8 @@
 # Insert_into_mysql
 Insert data into MySQL using PDO
 
+My name is Sergey Skudaev. I have eight books on amazon.com. Four of them are about computer programming.
+
 
 <?php
 $host = 'localhost';
@@ -46,7 +48,7 @@ $active=1;
 
 $stmt = $pdo->prepare($isql);
 
-$stmt->execute([$lastname,$firstname,$username,$password,$email,$role,$city,$country,$bio,$website,$active]);
+$stmt->execute([$lastname, $firstname, $username, $password, $email, $role, $city, $country, $bio, $website, $active]);
 
 $insertId = $pdo->lastInsertId();
 
@@ -60,3 +62,4 @@ echo "New records created successfully";
    echo "Error: " . $e->getMessage();
     }
 ?>
+
